@@ -47,7 +47,7 @@ The code performs the following steps:
 
 5. Define the quantum circuit for the kernel.
 
-<img src="asset/circuit.png" width="50%" />
+<img src="assets/circuit.png" width="50%" />
 
 6. Define the quantum instance to run the circuit on a simulator.
 
