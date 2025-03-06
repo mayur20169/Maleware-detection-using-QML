@@ -1,7 +1,6 @@
 <!-- Title: -->
 <div align="center">
   <h1> <a> Android malware detection using QML </a></h1>
-  <h2> All data related to the project
 </div>
 <br>
 
