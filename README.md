@@ -95,7 +95,3 @@ Also, install Qiskit Machine Learning dependencies (see [Docs](https://qiskit.or
 ```bash
 python3 -m pip install -U qiskit[machine-learning]
 ```
-Alternatively, one can install the required dependencies via the [requirement.txt](requirements.txt) file:
-```bash
-python3 -m pip install --user --upgrade pip && python3 -m pip install -r requirements.txt
-```
