@@ -13,11 +13,11 @@ The code starts by checking if SecML is already installed, and if not, installs 
 
 The dataset is loaded using the `pickle_utils.load()` function from the secml.utils.pickle_utils module, and its properties are printed to the console, including the number of samples, the number of benign and malicious samples, and the number of features. Finally, the code shows that the dataset consists of **1227080** features, which is a large number of features and can pose a challenge for machine learning models due to the curse of dimensionality.
 
-![](asset/dataset.png)
+![](assets/dataset.png)
 
 The code trains and tests a detector for recognizing **benign** and **malicious** applications. The following packages and modules are used:
 
-![](asset/reduced_dataset.png)
+![](assets/reduced_dataset.png)
 
 -`re`: provides regular expression matching operations</br>
 -`secml`: a machine learning library for Python</br>
@@ -59,25 +59,25 @@ The code performs the following steps:
 
 10. Evaluate the performance of the VQC classifier on the test set.
 
-![](asset/f1_score.png)
+![](assets/f1_score.png)
 
 11. Report the performance of the VQC classifier by means of the Detection Rate @ 2% False Positive Rate, the F1 score and by plotting the Receiver Operating Characteristic (ROC) curve.
 
-![](asset/f1_graph.png)</br>
+![](assets/f1_graph.png)</br>
 
 11. Explanation by considering sample **137** for the obstained result.
 
-![](asset/137_sample.png)
+![](assets/137_sample.png)
 
 12. Print the total time taken for training the classifier.
 
-![](asset/time.png)
+![](assets/time.png)
 
 Finally, the code plots the Security Evaluation Curve, which shows the detection rate of the detector as a function of the perturbation distance dmax. The curve shows that the detector is vulnerable to adversarial attacks, as changing less than 10 features can cause more than 50% of the malicious samples to be misclassified as *benign* applications.
 
 The computation time of the security evaluation is also reported at the end of the code.
 
-![](asset/security_graph.png)
+![](assets/security_graph.png)
 
 It is observed that this malware detector based on the VQC classifier is vulnerable to adversarial attacks and after changing less than *10* features half of the malicious samples are incorrectly classified as benign applications. This known vulnerability has also been highlighted when we listed the top influential features and observed that most of the relevance is given to a very limited set of features.
 
